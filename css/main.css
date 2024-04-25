@@ -1,0 +1,161 @@
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #171717;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.loader_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #dec64a;
+  gap: 10px;
+  position: fixed;
+  padding: 12px;
+  left: -7.5%;
+  top: 20%;
+  width: 5%;
+  margin-left: 20px;
+  height: 60vh;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  transition: left 0.5s ease;
+}
+
+.nav_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80%;
+}
+
+.nav_content a {
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.arrow {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  align-content: center;
+  position: absolute;
+  top: 0px;
+  right: -65%;
+  height: 30px;
+  background-color: #dec64a;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.arrow div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  fill: #000000;
+}
+
+.logoscontainer img{
+    width: 280px;
+    user-select: none;
+}
+
+.logoscontainer .ferrari{
+    width: 500px;
+}
+
+.logoscontainer .chevrolet{
+    width: 400px;
+}
+
+.logoscontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoscontainer .image{
+    background-color: #EDEDED;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0 -65px;
+    justify-content: center;
+    box-shadow: #EDEDED40 0px 50px 100px -20px, #EDEDED4d 0px 30px 60px -30px, #EDEDED59 0px -2px 6px 0px inset;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s  ease-in-out;
+    -webkit-transition: all .5s  ease-in-out;
+    -moz-transition: all .5s  ease-in-out;
+    -ms-transition: all .5s  ease-in-out;
+    -o-transition: all .5s  ease-in-out;
+}
+
+.logoscontainer .image:hover{
+    z-index: 100;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
